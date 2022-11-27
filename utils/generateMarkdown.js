@@ -19,6 +19,7 @@ function renderLicenseBadge(license) {
   function generateMarkdown(data) {
     return `# ${data.title}
 
+    ##License
     ${renderLicenseBadge(data.license)}
 
     ##Description
@@ -44,7 +45,7 @@ function renderLicenseBadge(license) {
   
   
     ##Features
-  ${data.features}
+    ${data.features}
   
     ##Contributions
     ${data.contributions}
@@ -52,14 +53,12 @@ function renderLicenseBadge(license) {
   
     ##Tests
     ${data.tests}
-  
-  
-    ##License
-    ${data.license}
-  
+
+    
     ##Reachout-Information
     - GitHub: [${data.github}](https://github.com/${data.github})
     - Email: ${data.email}
+
   `;
   }
   
